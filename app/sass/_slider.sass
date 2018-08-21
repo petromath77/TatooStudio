@@ -10,7 +10,7 @@
         height: 0
         border-style: solid
         border-width: 200px 100vw 0 0
-        border-color: #000000 transparent transparent transparent
+        border-color: $mblack transparent transparent transparent
         z-index: 2
     &::after
         content: ""
@@ -21,7 +21,7 @@
         height: 0
         border-style: solid
         border-width: 0 0 200px 100vw
-        border-color: transparent transparent #000000 transparent;
+        border-color: transparent transparent $mblack transparent;
         z-index: 2
 .swiper-slide
     img
@@ -30,12 +30,12 @@
 .swiper-pagination-bullet
     width: 15px
     height: 15px
-    background: #505050
+    background: $mgrey
     opacity: 1
-    border: 1px solid #ffffff
+    border: 1px solid $mwhite
     border-radius: 50%
 .swiper-pagination-bullet-active
-    background: #191919
+    background: $mblack
     width: 15px
     height: 15px
 .swiper-container-horizontal>.swiper-pagination-bullets, 
