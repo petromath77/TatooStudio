@@ -1,0 +1,92 @@
+.gallery
+    padding: 200px 0
+    position: relative
+    z-index: 1
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 100px 100vw 0 0
+        border-color: $mblack transparent transparent transparent
+        z-index: 2
+    &::after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 100px 100vw
+        border-color: transparent transparent $mblack transparent
+        z-index: 2
+    &__header
+        font-family: lato-thin
+        font-size: 42px
+        line-height: 50px
+        font-weight: 400
+        color: #000000
+        text-transform: uppercase
+        letter-spacing: 2px
+        margin-bottom: 30px
+        text-align: left
+        span
+            font-family: lato-semibold
+    &__txt
+        font-family: lato-thin
+        font-size: 14px
+        line-height: 20px
+        text-align: justify
+        margin: 0
+        color: $mgrey
+.gitems
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: -50px
+    margin-top: 50px
+    &__item
+        position: relative
+        width: 23%
+        margin-bottom: 50px
+        cursor: pointer
+        img
+            width: 100%
+            height: auto
+        &:hover
+            .ghover
+                opacity: .5
+.ghover
+    display: flex
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #000000
+    opacity: 0
+    transition: 1.1s
+    &__link
+        width: 30px
+        height: 30px
+        margin: auto
+        outline: none
+.popup_descr
+    position: relative
+    width: 30%
+    margin: 0 auto
+    padding: 10px
+    background-color: #ffffff
+    img
+        width: 100%
+.mfp-close-btn-in .mfp-close
+    position: absolute
+    right: 0
+    top: 0
+    color: #ffffff
